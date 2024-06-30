@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player: Music For fun</title>
+    <link rel="icon" href="https://developer.spotify.com/images/guidelines/design/icon3@2x.png">
+    <link rel="stylesheet" href="index.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- tailwind cdn -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+</head>
+
+<body>
+    <!-- wrapper class -->
+    <div class="wrapper overflow-x-hidden overflow-y-hidden h-[100vh] bg-black">
+
+        <!-- main content -->
+        <div class="w-full flex">
+
+            <!-- content left part -->
+            <div class="scrollable_sections w-[25%] min-w-[140px] mt-2 z-[200] h-[710px]">
+
+                <!-- first left part -->
+                <div class="w-full m-3 pl-4 rounded-xl c flex flex-col gap-10 p-5 bg-[#2d2c2c80]">
+                    <!-- spotify -->
+                    <div class="pl-[5px] mt-[-40px]">
+                        <a href="#" target="_blank">
+                            <img src="assets/spotify.png" width="100px" height="20px">
+                        </a>
+                    </div>
+
+                    <!-- home section  -->
+                    <div class="flex gap-4 mt-[-40px]">
+                        <a href="https://www.spotify.com/" target="_blank">
+                            <img src="assets/home.png" alt="" width="40px">
+                        </a>
+                        <a href="" class="pt-[5px] font-bold">
+                            <h1 class="text-white text-lg ">Home</h1>
+                        </a>
+                    </div>
+
+                    <!-- search section -->
+                    <div class="flex gap-4 mt-[-25px]">
+                        <a href="https://www.spotify.com/" target="_blank">
+                            <img src="assets/search.png" alt="" width="40px">
+                        </a>
+                        <a href="https://open.spotify.com/search" class="text-gray-300 font-bold">
+                            <h1 class="hover:text-white text-lg ">Search</h1>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- second left part -->
+                <div class="w-full m-3 pl-4 pb-[53px] rounded-xl bg-[#2d2c2c80] flex flex-col gap-10 p-5 relative ">
+
+                    <!-- library seection -->
+                    <div class="flex gap-4 mt-[-17px]">
+                        <a href="https://www.spotify.com/" target="_blank">
+                            <img src="assets/list.png" width="40px" class=" breakponit_1:mt-[-19px] pt-[20px]">
+                        </a>
+                        <a href="" class="text-gray-300 pt-[14px] text-[17px] font-bold">
+                            <h1 class="hover:text-white">Your Library</h1>
+                        </a>
+                        <a href="" class="">
+                            <p
+                                class="text-gray-300 hover:text-white text-[30px] font-semibold flex justify-center items-center absolute right-[3%] w-8 h-8 hover:bg-[#2d2c2c80] hover:rounded-full mt-3">
+                                +</p>
+                        </a>
+
+                    </div>
+
+                    <!-- playlist creation section -->
+                    <div class="scrollable_sections h-[220px] m-0 overflow-auto scrollbar-hide pt-6">
+                        <div class="left_part mt-[-20px] bg-[#2d2c2c80] flex flex-col gap-10 p-5"
+                            onclick="alert('login to create playlist')">
+                            <p class="text-[14px] breakponit_1:text-[17px] font-bold text-white">Create your first
+                                playlist</p>
+                            <p class="text-[12px] breakponit_1:text-[14px] font-semibold text-white mt-[-30px]">it's
+                                easy, we'll help you</p>
+                            <button
+                                class="text-black font-semibold min-w-[70px] mb-2 breakponit_1:text-[17px] text-[14px] mt-[-20px] hover:scale-110 bg-white rounded-2xl w-[50%] p-1">Create
+                                Playlist</button>
+                        </div>
+                        <a href="https://open.spotify.com/genre/podcasts-web">
+                            <div class="left_part mt-[-20px] bg-[#2d2c2c80] flex flex-col gap-10 p-5">
+                                <p class="text-[14px] breakponit_1:text-[17px] font-bold text-white">Let's find some
+                                    podcast
+                                    to follow</p>
+                                <p class="text-[12px] breakponit_1:text-[14px] font-semibold text-white mt-[-30px]">we
+                                    will
+                                    keep you updated on new
+                                    episodes</p>
+                                <button
+                                    class="text-black font-semibold min-w-[70px] mb-2 breakponit_1:text-[17px] text-[14px] mt-[-20px] hover:scale-110 bg-white rounded-2xl w-[50%] p-1">Browse
+                                    Podcast</button>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+                    <!-- footer seection -->
+                    <div
+                        class="scrollable_sections flex flex-wrap gap-x-10 gap-y-4 text-[11px] h-[100px] overflow-y-auto p-5 text-gray-300">
+                        <a href="https://www.spotify.com/in-en/legal/end-user-agreement/">Legal</a>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/reporting-content">Safety & Privacy
+                            Center</a>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                        <a href="https://www.spotify.com/in-en/accessibility">Accessability</a>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/" target="_blank">Cookies</a>
+                    </div>
+
+                    <!-- language button -->
+                    <button
+                        class="text-white font-semibold min-w-[110px] -mb-[30px] breakponit_1:-mb-[18px] mt-[-20px] hover:scale-110 border-white border-[1px] ml-[4%] flex rounded-2xl h-10 w-[30%]">
+                        <img src="https://i.pinimg.com/474x/6f/e5/23/6fe523255cab538d5b5afaea3b3f695c.jpg"
+                            class="m-1 mr-3" alt="" width="30px">
+                        <p class="pt-2">English</p>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- content right part -->
+            <div
+                class="scrollable_sections w-[75%] pt-0 bg-[#1b1a1a] m-5 mx-6 rounded-xl overflow-x-hidden overflow-y-scroll h-[710px]">
+
+                <!-- login credentials -->
+                <div
+                    class="h-[80px] w-full pt-6 bg-[#1b1a1a] bg-none flex sticky top-0 right-[20px] z-[100] breakpoint_3:right-[-2%] overflow-x-hidden">
+                    <div
+                        class="w-full gap-1 m-auto breakpoint_3:w-[250px] flex justify-center absolute right-0 breakpoint_3:right-[4%]">
+                        <button
+                            class="ml-[-10px] breakpoint_3:ml-[0px] text-gray-400 hover:text-white min-w-[64px] text- font-semibold hover:scale-110 rounded-2xl w-[40%] h-10 p-1"><a
+                                href="https://www.spotify.com/in-en/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2F">Sign
+                                up</a>
+                        </button>
+
+                        <button
+                            class=" text-black font-semibold min-w-[64px] hover:scale-110 bg-white rounded-2xl w-[40%] h-10 p-1">
+                            <a
+                                href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2F">Login</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- artists section -->
+                <div class="bg-[#27262680] pt-2 mb-0">
+                    <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3C"
+                        class="text-white text-[16px] pl-[0%] text-center block breakpoint_3:text-[22px] breakpoint_2:inline breakpoint_2:pl-[3%] font-bold">Popular
+                        artists</a>
+
+                    <div
+                        class="scrollable_sections flex overflow-x-scroll shrink-0 w-full justify-evenly p-4 content-center gap-3">
+
+                        <a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw">
+                            <div
+                                class="breakpoint_2:w-[170px] breakpoint_2:h-[170px] shrink-0 singer group relative hover:scale-110 duration-200 ease-in bg-[url('https://i.scdn.co/image/ab676161000051740261696c5df3be99da6ed3f3')] bg-center bg-cover w-[140px] h-[120px] rounded-full">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-24 right-0  breakpoint_2:w-10 breakpoint_2:h-1w-10 breakpoint_2:top-32 breakpoint_2:right-3 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU">
+                            <div
+                                class="breakpoint_2:w-[170px] breakpoint_2:h-[170px] shrink-0 group relative hover:scale-110 duration-200 ease-in bg-[url('https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca')] bg-center bg-cover w-[140px] h-[120px] rounded-full">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-24 right-0  breakpoint_2:w-10 breakpoint_2:h-1w-10 breakpoint_2:top-32 breakpoint_2:right-3 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG">
+                            <div
+                                class="breakpoint_2:w-[170px] breakpoint_2:h-[170px] shrink-0 group relative hover:scale-110 duration-200 ease-in bg-[url('https://i.scdn.co/image/ab6761610000e5ebb19af0ea736c6228d6eb539c')] bg-center bg-cover w-[140px] h-[120px] rounded-full">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-24 right-0  breakpoint_2:w-10 breakpoint_2:h-1w-10 breakpoint_2:top-32 breakpoint_2:right-3 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/artist/5wJ1H6ud777odtZl5gG507">
+                            <div
+                                class="breakpoint_2:w-[170px] breakpoint_2:h-[170px] shrink-0 group relative hover:scale-110 duration-200 ease-in bg-[url('https://i.scdn.co/image/ab676161000051746220fc5e958ab498b96f5835')] bg-center bg-cover w-[140px] h-[120px] rounded-full">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-24 right-0  breakpoint_2:w-10 breakpoint_2:h-1w-10 breakpoint_2:top-32 breakpoint_2:right-3 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/artist/4zCH9qm4R2DADamUHMCa6O">
+                            <div
+                                class="breakpoint_2:w-[170px] breakpoint_2:h-[170px] shrink-0 group relative hover:scale-110 duration-200 ease-in bg-[url('https://i.scdn.co/image/ab6761610000e5ebfc7c542c04b5f7dc8f1b1c16')] bg-center bg-cover w-[140px] h-[120px]  rounded-full">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-24 right-0  breakpoint_2:w-10 breakpoint_2:h-1w-10 breakpoint_2:top-32 breakpoint_2:right-3 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/artist/6Mv8GjQa7LKUGCAqa9qqdb">
+                            <div
+                                class="breakpoint_2:w-[170px] breakpoint_2:h-[170px] shrink-0 group relative hover:scale-110 duration-200 ease-in bg-[url('https://i.scdn.co/image/ab6761610000e5eb90b6c3d093f9b02aad628eaf')] bg-center bg-cover w-[140px] h-[120px] rounded-full">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-24 right-0  breakpoint_2:w-10 breakpoint_2:h-1w-10 breakpoint_2:top-32 breakpoint_2:right-3 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+                <!-- popular albums  -->
+                <div class="bg-[#1b1a1a] pt-8">
+                    <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B"
+                        class="text-white text-[16px] pl-[0%] text-center block breakpoint_3:text-[22px] breakpoint_2:inline breakpoint_2:pl-[3%] font-bold">Popular
+                        albums</a>
+                    <div
+                        class="scrollable_sections flex overflow-x-scroll shrink-0 w-ful justify-evenly p-4 content-center">
+
+                        <a href="https://open.spotify.com/album/0a183xiCHiC1GQd8ou7WXO">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[237px] breakpoint_2:w-[200px] breakpoint_2:h-[290px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2735f3ede47954a93aa03efe5f9"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">ANIMAL</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Manan Bharadwaj, Vishal Mishra,
+                                    Jaani
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/album/0LcyzKKw3RjFKL6ygISTeU">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[237px] breakpoint_2:w-[200px] breakpoint_2:h-[290px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2739bb2d30b01ac2cada8a8ad03"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Ek Tha Raja</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Badshah</p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/album/0Rkv5iqjF2uenfL0OVB8hg">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[237px] breakpoint_2:w-[200px] breakpoint_2:h-[290px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2736404721c1943d5069f0805f3"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Aashiqui 2</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Mithoon, Ankit Tiwari, Jeet
+                                    Ganguli
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/album/45ZIondgVoMB84MQQaUo9T">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[237px] breakpoint_2:w-[200px] breakpoint_2:h-[290px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Moosetape</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Sidhu Moose Wala</p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/album/5AivaZj0CiQJoDWqVH2pbh">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duratin-200 ease-in hover:bg-[#30303080] w-[150px] h-[237px] breakpoint_2:w-[200px] breakpoint_2:h-[290px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab67616d0000b2731a8c4618eda885a406958dd0"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Still Rollin</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Shubh</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- popular radio -->
+                <div class="bg-[#1b1a1a] pt-8">
+                    <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu4h"
+                        class="text-white text-[16px] pl-[0%] text-center block breakpoint_3:text-[22px] breakpoint_2:inline breakpoint_2:pl-[3%] font-bold">Popular
+                        radio</a>
+                    <div
+                        class="scrollable_sections flex overflow-x-scroll shrink-0 w-ful justify-evenly p-4 content-center">
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E4oJSdHZrVjxD">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[300px] breakpoint_2:w-[200px] breakpoint_2:h-[310px] rounded-md">
+                                <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4YRxDV8wJFPHPTeXepOstw/id"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Arijit Singh Radio</h1>
+                                <p class="font-[600] text-gray-400 text-sm pt-2 mb-3">With Neha Kakkar, Pritam, KK and
+                                    more
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E4AnYVmEEo8ws">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[300px] breakpoint_2:w-[200px] breakpoint_2:h-[310px] rounded-md">
+                                <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/2FKWNmZWDBZR4dE5KX4plR/tr"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Diljit Dosanjh Radio</h1>
+                                <p class="font-[600] text-gray-400 text-sm pt-2 mb-3">With Garry Sandhu, Ranjit Bawa,
+                                    Amrinder Gill and
+                                    more</p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E4o4r1QjBVOk3">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[300px] breakpoint_2:w-[200px] breakpoint_2:h-[310px] rounded-md">
+                                <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/3gBKY0y3dFFVRqicLnVZYz/de"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Alka Yagnik Radio</h1>
+                                <p class="font-[600] text-gray-400 text-sm pt-2 mb-3">With Udit Narayan, Kumar Sanu,
+                                    Anuradha Paudwal
+                                    an...</p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E4wrEODYq2x5q">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[300px] breakpoint_2:w-[200px] breakpoint_2:h-[310px] rounded-md">
+                                <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4K6blSRoklNdpw4mzLxwfn/en"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Kumar Sanu Radio</h1>
+                                <p class="font-[600] text-gray-400 text-sm pt-2 mb-3">With Udit Narayan, Alka Yagnik,
+                                    Anuradha Paudwal
+                                    an...</p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1E4xzuMPqbCJfm">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duratin-200 ease-in hover:bg-[#30303080] w-[150px] h-[300px] breakpoint_2:w-[200px] breakpoint_2:h-[310px] rounded-md">
+                                <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4fEkbug6kZzzJ8eYX6Kbbp/de"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">KK Radio</h1>
+                                <p class="font-[600] text-gray-400 text-sm pt-2 mb-3">With Mohit Chauhan, Ankit Tiwari,
+                                    Javed Ali and
+                                    more
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- featured charts -->
+                <div class="bg-[#1b1a1a] pt-8">
+                    <a href="https://open.spotify.com/section/0JQ5DAzQHECxDlYNI6xD1g"
+                        class="text-white text-[16px] pl-[0%] text-center block breakpoint_3:text-[22px] breakpoint_2:inline breakpoint_2:pl-[3%] font-bold">Featured
+                        Charts</a>
+                    <div
+                        class="scrollable_sections flex overflow-x-scroll shrink-0 w-ful justify-evenly p-4 content-center">
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[300px] breakpoint_2:w-[200px] breakpoint_2:h-[310px] rounded-md">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Top Songs - Global</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">your weekely update of the most
+                                    played
+                                    tracks
+                                    right now</p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZEVXbLp5XoPON0wI">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[300px] breakpoint_2:w-[200px] breakpoint_2:h-[310px] rounded-md">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Top Songs - USA</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">your weekely update of the most
+                                    played
+                                    tracks
+                                    right now</p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[300px] breakpoint_2:w-[200px] breakpoint_2:h-[310px] rounded-md">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Top 50 - Global</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">your weekely update of the most
+                                    played
+                                    tracks
+                                    right now
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZEVXbLRQDuF5jeBp">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[300px] breakpoint_2:w-[200px] breakpoint_2:h-[310px] rounded-md">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Top 50 - USA</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">your weekely update of the most
+                                    played
+                                    tracks
+                                    right now</p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZEVXbLiRSasKsNU9">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duratin-200 ease-in hover:bg-[#30303080] w-[150px] h-[300px] breakpoint_2:w-[200px] breakpoint_2:h-[310px] rounded-md">
+                                <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Viral 50 - Global</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">your weekely update of the most
+                                    played
+                                    tracks
+                                    right now
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- spotify playlists -->
+                <div class="bg-[#1b1a1a] pt-8">
+                    <a href="https://open.spotify.com/section/0JQ5DAuChZYPe9iDhh2mJz"
+                        class="text-white text-[16px] pl-[0%] text-center block breakpoint_3:text-[22px] breakpoint_2:inline breakpoint_2:pl-[3%] font-bold">Spotify
+                        Playlists</a>
+                    <div
+                        class="scrollable_sections flex overflow-x-scroll shrink-0 w-ful justify-evenly p-4 content-center">
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1DWZheHO7xislj">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="assets/spotify_playlist_1.png" class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Happy Hits!</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Hits to boost your mood fill you
+                                    with
+                                    happiness!
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1DX319l60u7Jxg">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="assets/spotify_playlist_2.png" class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Calming Acoustic</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Keep calm with instrumental
+                                    acoustic
+                                    tracks
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1DWVleyMkaelTd">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="assets/spotify_playlist_3.png" class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Pop Rising</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Who's now and next in pop.Cover:
+                                    Myles
+                                    Smith
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1DX6kz6Kli3wib">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="assets/spotify_playlist_4.png" class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Lofi Chill</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Lazy slow lofi beats for laid-back
+                                    moments.</p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/playlist/37i9dQZF1DX2zAr9vdmFlU">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duratin-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="assets/spotify_playlist_5.png" class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Indie Rock Hits</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">True Indie rock hits.
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- spotify original podcasts -->
+                <div class="bg-bg-[#1b1a1a] pt-8">
+                    <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu4t"
+                        class="text-white text-[16px] pl-[0%] text-center block breakpoint_3:text-[22px] breakpoint_2:inline breakpoint_2:pl-[3%] font-bold">Spotify
+                        Original Podcasts</a>
+                    <div
+                        class="scrollable_sections flex overflow-x-scroll shrink-0 w-ful justify-evenly p-4 content-center">
+
+                        <a href="https://open.spotify.com/show/7kXTwW1xCVei6efFjQgINx">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab67656300005f1f9114d741247e2d26a7b48b6f"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Shree Krishna Leela (Hindi)</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">spotify studios
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/show/4vS5KRYWFT9xTUlO8XOAj5">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab6765630000ba8a58e730e8341e29ca0f0671fe"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Preetkotha (Bengali Horror..)</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Gourab Tapadar
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/show/4rOoJ6Egrf8K2IrywzwOMk">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="https://lite-images-i.scdn.co/image/ab67656300005f1feda378e2fa70e2c46cda3931"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">The Joe Rogan Experience</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Joe Rogan
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/show/6wUJkXMlCHsqCY1WAtwsm1">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab6765630000ba8a3c0cd1efd66f78f05f13632a"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">True Story Bro! with...</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Spotify</p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/show/1DjQ9TBzvB3B4xUgGWSVsB">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duratin-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab6765630000ba8aa640450d0f9e4367ccf0fa8a"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Gopi Sudhakar Ennenna...</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">spotify studios
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Trending Episodes -->
+                <div class="bg-[#1b1a1a] pt-8">
+                    <a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu8o"
+                        class="text-white text-[16px] pl-[0%] text-center block breakpoint_3:text-[22px] breakpoint_2:inline breakpoint_2:pl-[3%] font-bold">Trending
+                        Episodes</a>
+                    <div
+                        class="scrollable_sections flex overflow-x-scroll shrink-0 w-ful justify-evenly p-4 content-center">
+
+                        <a href="https://open.spotify.com/episode/6Gl5Y62Znq3M1Fn8ywYRjz">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="https://external-preview.redd.it/vFSYjqCnm1S4lM9kfpBK3xS0KbedoXVeP-11vgiIJ0c.jpg?auto=webp&s=bd23b2c5d69336972d5be66978fc5a549cc63abc"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Welcome Back, RJ Balaji..</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">June 2021 . 15 min
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/episode/2nLOsuQXZL4oBbzbYQYYro">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab67616d0000b273207f9417f56df0c8338f6c9c"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">#73: Hotel of Horrors...</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">June 2021 . 93 min
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/episode/5A9DkT5qoSsF909vLaOaL0">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fa6e23e9f24df3b592ac04b3f"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Anubis: God of Death-...</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">June 2021 . 16 min
+                                </p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/episode/7JEJp2uiED0PsKDwf0vo77">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab67656300005f1fa6e23e9f24df3b592ac04b3f"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Anubis: God of Death-...</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">June 2021 . 13 min</p>
+                            </div>
+                        </a>
+
+                        <a href="https://open.spotify.com/episode/1x1YHdOpYAjwR48eoz1yLL">
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duratin-200 ease-in hover:bg-[#30303080] w-[150px] h-[280px] breakpoint_2:w-[200px] breakpoint_2:h-[300px] rounded-md">
+                                <img src="https://i.scdn.co/image/ab6765630000ba8a36dbb0b2d65004488fcc322f"
+                                    class="rounded-md" width="100%" height="100%">
+                                <div
+                                    class="play_pause_icon w-8 h-8 top-[130px] right-2  breakpoint_2:w-10 breakpoint_2:top-[180px] breakpoint_2:right-2 absolute object-cover group-hover:block ease-in hidden">
+                                    <img src="assets/play_pause_logo.png" class="rounded-full">
+                                </div>
+                                <h1 class="mt-2 text-white font-bold pt-2">Mahabharat Episode 1:...</h1>
+                                <p class="text-gray-400 font-[600] text-sm pt-2 mb-3">Apr 2014 . 24 min
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- footer section -->
+                <footer>
+                    <div class="bg-[#1b1a1a] pt-8">
+
+                        <div
+                            class="scrollable_sections flex overflow-x-scroll shrink-0 w-ful justify-evenly p-4 content-center">
+
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in w-[150px] h-[200px] breakpoint_2:w-[200px] breakpoint_2:h-[250px] rounded-md">
+                                <p class="text-white font-bold pt-2">Company</p><br>
+                                <a href="https://www.spotify.com/in-en/about-us/contact/"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">About</a><br>
+                                <a href="https://www.lifeatspotify.com/"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">Jobs</a><br>
+                                <a href="https://newsroom.spotify.com/"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">For the
+                                    Record</a>
+                            </div>
+
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in w-[150px] h-[200px] breakpoint_2:w-[200px] breakpoint_2:h-[250px] rounded-md">
+                                <p class="text-white font-bold pt-2">Communities</p><br>
+                                <a href="https://artists.spotify.com/home"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">For
+                                    Artists</a><br>
+                                <a href="https://developer.spotify.com/"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">Developers</a><br>
+                                <a href="https://ads.spotify.com/en-IN/"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">Advertising</a><br>
+                                <a href="https://investors.spotify.com/"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">Investors</a><br>
+                                <a href="https://spotifyforvendors.com/"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">Vendors</a>
+                            </div>
+
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in w-[150px] h-[200px] breakpoint_2:w-[200px] breakpoint_2:h-[250px] rounded-md">
+                                <p class="text-white font-bold pt-2">Useful Links</p><br>
+                                <a href="https://support.spotify.com/in-en/"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">Support</a><br>
+                                <a href="https://www.spotify.com/in-en/free/"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">Free Mobile
+                                    App</a>
+                            </div>
+                            <div
+                                class="shrink-0 albums group relative p-3 object-cover duration-200 ease-in w-[150px] h-[200px] breakpoint_2:w-[200px] breakpoint_2:h-[250px] rounded-md">
+                                <p class="text-white font-bold pt-2">Spotify Plans</p><br>
+                                <a href="https://www.spotify.com/in-en/premium/?ref=spotifycom_footer_premium_individual"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">Premium
+                                    individuals</a><br>
+                                <a href="https://www.spotify.com/in-en/duo/?ref=spotifycom_footer_premium_duo"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">Premium
+                                    Duo</a><br>
+                                <a href="https://www.spotify.com/in-en/family/?ref=spotifycom_footer_premium_family"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">Premium
+                                    Family</a><br>
+                                <a href="https://www.spotify.com/in-en/student/?ref=spotifycom_footer_premium_student"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">Premium
+                                    Student</a><br>
+                                <a href="https://www.spotify.com/in-en/free/?ref=spotifycom_footer_free"
+                                    class="text-gray-400 text-sm pt-2 hover:text-white font-[700]">Spotify
+                                    Free</a>
+                            </div>
+
+                            <div
+                                class="shrink-0 albums group relative object-cover duratin-200 ease-in w-[150px] h-[180px] breakpoint_2:w-[200px] breakpoint_2:h-[200px] rounded-md">
+                                <ul class="social-icons">
+                                    <li><a href="https://www.instagram.com/spotify/" target="_blank"><i
+                                                class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://x.com/spotify?mx=2" target="_blank"><i
+                                                class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="h-px bg-gray-200 border-0 m-3 dark:bg-gray-700">
+                        <p class="text-gray-400 text-sm p-8 font-[600]">© 2024 Spotify AB</p>
+                </footer>
+                
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    "breakponit_1": "837px",
+                    "breakpoint_2": "646px",
+                    "breakpoint_3": "463px",
+                    "breakpoint_4": "540px",
+                },
+            }
+        }
+    </script>
+    </div>
+</body>
+
+</html>
